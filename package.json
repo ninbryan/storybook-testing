@@ -1,0 +1,20 @@
+{
+  "name": "storybook-testing",
+  "version": "0.0.0",
+  "description": "storybook testing",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook -p 2999 -s public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "5.2.0-beta.28",
+    "babel-loader": "8.0.6"
+  }
+}
