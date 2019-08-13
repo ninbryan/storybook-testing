@@ -5,7 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "storybook": "start-storybook -p 2999 -s public"
+    "jest": "jest",
+    "storybook": "start-storybook -p 2999",
+    "prestorybook": "jest --json --outputFile=.storybook/.jest-test-results.json || true"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +16,14 @@
     "react-dom": "16.9.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-jest": "5.2.0-beta.28",
     "@storybook/react": "5.2.0-beta.28",
-    "babel-loader": "8.0.6"
+    "@testing-library/jest-dom": "4.0.0",
+    "@testing-library/react": "9.1.0",
+    "babel-jest": "24.8.0",
+    "babel-loader": "8.0.6",
+    "jest": "24.8.0"
   }
 }
